@@ -25,6 +25,7 @@
     "tael": "^1.0.10"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1"
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0"
   }
 }
