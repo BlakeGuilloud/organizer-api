@@ -1,0 +1,19 @@
+{
+  "name": "organizer-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlakeGuilloud/organizer-api.git"
+  },
+  "author": "Blake Guilloud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlakeGuilloud/organizer-api/issues"
+  },
+  "homepage": "https://github.com/BlakeGuilloud/organizer-api#readme"
+}
