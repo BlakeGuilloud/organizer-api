@@ -8,6 +8,8 @@ const devEnv = require('./env.config');
 const db = process.env.MONGODB_URI || devEnv.MONGODB_URI || 'mongodb://localhost/testing';
 const port = process.env.PORT || 8100;
 
+mongoose.Promise = global.Promise;
+
 mongoose.connect(db);
 
 app.use(bodyParser.urlencoded({ extended: true }));
