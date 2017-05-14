@@ -3,8 +3,9 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const userRoutes = require('./lib/routes/user.routes');
+const devEnv = require('./env.config');
 
-const db = process.env.MONGODB_URI || 'mongodb://localhost/testing';
+const db = process.env.MONGODB_URI || devEnv.MONGODB_URI || 'mongodb://localhost/testing';
 const port = process.env.PORT || 8100;
 
 mongoose.connect(db);
