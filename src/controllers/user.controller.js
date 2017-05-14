@@ -8,3 +8,10 @@ export function postUser(req, res) {
     .then(SendSuccess(res))
     .catch(SendError(res));
 }
+
+export function getUsers(req, res) {
+  return Promise.resolve(req)
+    .then(UserService.getUsers)
+    .then(SendSuccess(res))
+    .catch(SendError(res));
+}

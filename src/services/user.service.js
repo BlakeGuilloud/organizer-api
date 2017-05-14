@@ -11,3 +11,14 @@ export async function postUser(data) {
 
   return Promise.resolve(newUser);
 }
+
+export async function getUsers() {
+  let users;
+  try {
+    users = await User.find();
+  } catch(err) {
+    return Promise.reject(err);
+  }
+
+  return Promise.resolve(users);
+}
