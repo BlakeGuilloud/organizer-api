@@ -16,7 +16,7 @@ export async function getProjects(user) {
   let projects;
 
   try {
-    projects = await Project.find();
+    projects = await Project.find({ user });
   } catch(err) {
     return Promise.reject(err);
   }
