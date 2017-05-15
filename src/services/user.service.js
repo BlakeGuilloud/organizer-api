@@ -14,6 +14,7 @@ export async function postUser(data) {
 
 export async function getUsers() {
   let users;
+
   try {
     users = await User.find();
   } catch(err) {
