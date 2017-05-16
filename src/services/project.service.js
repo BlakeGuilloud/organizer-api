@@ -12,11 +12,11 @@ export async function postProject(data) {
   return Promise.resolve(newProject);
 }
 
-export async function getProjects(user) {
+export async function getProjects(userId) {
   let projects;
 
   try {
-    projects = await Project.find({ user });
+    projects = await Project.find({ userId }).populate('tags');
   } catch(err) {
     return Promise.reject(err);
   }
